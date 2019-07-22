@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 // const Index = () => {
 //     return (
@@ -12,11 +13,22 @@ class Index extends React.Component {
         return (
             <div>
                 <h1>I am Index Page</h1>
-                <a href="/"> Home </a>
-                <a href="/blogs"> Blog </a>
-                <a href="/portfolios"> Portfolio </a>
-                <a href="/about"> Sobre </a>
-                <a href="/cv"> CV </a>
+                <Link href="/">
+                    <a>Home</a>
+                </Link>
+                <Link href="/blogs">
+                    <a>Blog</a>
+                </Link>
+                <Link href="/portfolios">
+                    <a>Portfolio</a>
+                </Link>
+                <Link href="/about">
+                    <a>Sobre</a>
+                </Link>
+                <Link href="/cv">
+                    <a>CV</a>
+                </Link>
+
             </div>
         )
     }
