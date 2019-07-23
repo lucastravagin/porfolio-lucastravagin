@@ -1,25 +1,35 @@
 import React from 'react'
 import BaseLayout from '../components/layouts/BaseLayout'
 
-// const Index = () => {
-//     return (
-//         <h1>I am Index Page</h1>
-//     )
-// }
+
 
 class Index extends React.Component {
     
+    constructor() {
+        super()
+
+        this.state = {
+            title: 'I am Index Page'
+        }
+    }
+
+    componentDidMount() {
+        
+    }
+
+    updateTitle() {
+        this.setState({title: 'I am Updated Index Page'})
+    }
+
     render() {
         return (
             <BaseLayout>
                 <h1>I am Index Page</h1>
+                <h2>{this.state.title}</h2>
+                <button onClick={ () => this.updateTitle() }> Change Title </button>
             </BaseLayout>
         )
     }
 }
 
 export default Index;
-
-/* <Header title={'I am Header Component'}>
-<h1>I am Header Subtitle</h1>
-</Header> */
