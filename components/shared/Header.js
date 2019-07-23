@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import '../../styles/main.scss'
 
 class Header extends React.Component {
     render() {
@@ -10,6 +11,8 @@ class Header extends React.Component {
             <React.Fragment>
                 <p>{ title }</p>
                 {this.props.children}
+                <p className="customClass">I am  Styled P Element </p>
+                <p className="customClassFrom File">I am  Styled P Element </p>
                 <Link href="/">
                     <a> Home </a>
                 </Link>
@@ -25,6 +28,18 @@ class Header extends React.Component {
                 <Link href="/cv">
                     <a> CV </a>
                 </Link>
+                <style jsx>
+                    {
+                      `
+                      a {
+                          font-size: 20px
+                      };
+                      .customClass {
+                          color: red
+                      }
+                      `
+                    }
+                </style>
             </React.Fragment>
         )
     }
