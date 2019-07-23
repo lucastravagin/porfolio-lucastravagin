@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/shared/Header'
+import BaseLayout from '../components/layouts/BaseLayout'
 
 // const Index = () => {
 //     return (
@@ -11,15 +11,15 @@ class Index extends React.Component {
     
     render() {
         return (
-            <div>
+            <BaseLayout>
                 <h1>I am Index Page</h1>
-                <Header title={'I am Header Component'}>
-                    <h1>I am Header Subtitle</h1>
-                </Header>
-            </div>
+            </BaseLayout>
         )
     }
 }
 
 export default Index;
 
+/* <Header title={'I am Header Component'}>
+<h1>I am Header Subtitle</h1>
+</Header> */
