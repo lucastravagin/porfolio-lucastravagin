@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Header from '../components/shared/Header'
 
 // const Index = () => {
 //     return (
@@ -13,22 +13,8 @@ class Index extends React.Component {
         return (
             <div>
                 <h1>I am Index Page</h1>
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-                <Link href="/blogs">
-                    <a>Blog</a>
-                </Link>
-                <Link href="/portfolios">
-                    <a>Portfolio</a>
-                </Link>
-                <Link href="/about">
-                    <a>Sobre</a>
-                </Link>
-                <Link href="/cv">
-                    <a>CV</a>
-                </Link>
-
+                <Header />
+            
             </div>
         )
     }
