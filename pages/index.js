@@ -1,10 +1,15 @@
 import React from 'react'
 import BaseLayout from '../components/layouts/BaseLayout'
 import SuperComponent from '../components/SuperComponent'
-
+import axios from 'axios'
 
 class Index extends SuperComponent {
     
+
+    static getInitialProps() {
+        return { initialData: [1,2,3,4] }
+    }
+
     constructor(props) {
         super(props)
 
@@ -25,6 +30,7 @@ class Index extends SuperComponent {
 
     render() {
         const { title } = this.state;
+        const initialData = this.props.initialData;
         //const title = this.state.title; 
 
         return (
