@@ -40,7 +40,7 @@ export default class PortDate extends React.Component {
         <Label>{label}</Label>
         <div className="input-group">
           <DatePicker
-            selected={this.state.dateValue}
+            selected={moment(this.state.dateValue)}
             onChange={this.handleChange}
             peekNextMounth
             showMonthDropdown
