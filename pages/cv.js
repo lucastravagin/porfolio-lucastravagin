@@ -9,15 +9,15 @@ class Cv extends React.Component {
   render() {
     return (
       <BaseLayout {...this.props.auth}>
-        <BasePage title="Preview of my CV" className="cv-page">
+        <BasePage title="Preview do meu CV" className="cv-page">
           <Row>
             <Col md={{size: 8, offset: 2}}>
               <div className="cv-title">
-                <a download="jerga_cv.pdf" className="btn btn-success" href="/static/jerga_cv.pdf">
+                <a download="curriculo_lucas_travagin.pdf" className="btn btn-success" href="/static/curriculo_lucas_travagin.pdf">
                   Download
                 </a>
               </div>
-              <iframe style={{width: '100%', height: '800px'}} src="/static/jerga_cv.pdf">
+              <iframe style={{width: '100%', height: '800px'}} src="/static/curriculo_lucas_travagin.pdf">
               </iframe>
             </Col>
           </Row>

@@ -14,7 +14,7 @@ class Index extends React.Component {
       isFlipping: false
     }
 
-    this.roles = ['Developer', 'Tech Lover', 'Team Player', 'Course Creator', 'React.js', 'Angular'];
+    this.roles = ['Developer', 'Tech Lover', 'Team Player', 'NodeJS', 'Go Lang', 'Vue', 'AWS', 'Devops'];
   }
 
   componentDidMount() {
@@ -42,7 +42,7 @@ class Index extends React.Component {
     return (
       <BaseLayout className={`cover ${isFlipping ? 'cover-1' : 'cover-0'}`} {...this.props.auth}
                   headerType="index"
-                  title="Filip Jerga - Portfolio">
+                  title="Lucas Travagin - Portfolio">
         <div className="main-section">
           <div className="background-image">
             <img src="/static/images/background-index.png" />
@@ -56,7 +56,7 @@ class Index extends React.Component {
                       <div className="hero-section-content">
                         <h2> Full Stack Web Developer </h2>
                         <div className="hero-section-content-intro">
-                          Have a look at my portfolio and job history.
+                          Javascript Developer, NodeJS, Go Lang, Vue, AWS e Devops.
                         </div>
                       </div>
                       <img alt="Guy programming welcome picture" className="image" src="/static/images/section-1.jpg"/>
@@ -83,8 +83,9 @@ class Index extends React.Component {
                 <div className="hero-welcome-text">
                   <h1>
                     { isAuthenticated && <span> <b> {user.name} </b> </span> }
-                    Welcome to the portfolio website of Filip Jerga.
-                    Get informed, collaborate and discover projects I was working on through the years!
+                    Bem Vindo(a). Eu sou o Lucas, um jovem apaixonado por tecnologia e pessoas :).
+                    Fique a vontade para navegar e conhecer um pouco mais <a className="text-warning" href="/about">sobre mim</a>, <a className="text-warning" href="/portfolios"> meus projetos</a> e 
+                    <a className="text-warning" href="/blog"> minhas publicações</a>
                   </h1>
                 </div>
                 <Typed
@@ -102,7 +103,7 @@ class Index extends React.Component {
 
                 <div className="hero-welcome-bio">
                   <h2>
-                    Let's take a look on my work.
+                    A few months of coding can save DAYS of planning.
                   </h2>
                 </div>
               </Col>

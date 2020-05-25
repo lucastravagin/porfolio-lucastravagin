@@ -35,7 +35,7 @@ const Login = () => {
 
 const Logout = () => {
   return (
-    <span onClick={auth0.logout} className="nav-link port-navbar-link clickable"> Logout </span>
+    <span onClick={auth0.logout} className="nav-link port-navbar-link clickable"> Sair </span>
   )
 }
 
@@ -110,7 +110,7 @@ export default class Header extends React.Component {
     return (
       <div>
         <Navbar className={`port-navbar port-nav-base absolute ${className} ${menuOpenClass}`} color="transparent" dark expand="md">
-          <NavbarBrand className="port-navbar-brand" href="/">Filip Jerga</NavbarBrand>
+          <NavbarBrand className="port-navbar-brand" href="/">Lucas Travagin</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -118,10 +118,10 @@ export default class Header extends React.Component {
                 <BsNavLink route="/" title="Home" />
               </NavItem>
               <NavItem className="port-navbar-item">
-                <BsNavLink route="/about" title="About" />
+                <BsNavLink route="/about" title="Sobre" />
               </NavItem>
               <NavItem className="port-navbar-item">
-                <BsNavLink route="/portfolios" title="Portfolio" />
+                <BsNavLink route="/portfolios" title="Portifólio" />
               </NavItem>
               {this.renderBlogMenu()}
               <NavItem className="port-navbar-item">

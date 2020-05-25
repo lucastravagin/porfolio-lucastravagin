@@ -12,10 +12,16 @@
 @import './header';
 @import './slate-editor';
 
+::-webkit-scrollbar{width:5px; height:7px}
+::-webkit-scrollbar-thumb { background: #f39c12;border-radius:5px}
+::-webkit-scrollbar-track { background:#292b40}
+
 html, body {
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', 'Helvetica';
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .clickable {

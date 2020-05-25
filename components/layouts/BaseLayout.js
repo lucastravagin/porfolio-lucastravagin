@@ -5,21 +5,24 @@ import Head from 'next/head';
 const BaseLayout = (props) => {
   const { className, children, isAuthenticated, user, isSiteOwner, cannonical } = props;
   const headerType = props.headerType || 'default';
-  const title = props.title || 'Filip Jerga Portfolio';
+  const title = props.title || 'Lucas Travagin Portfolio';
   return (
     <React.Fragment>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="My name is Filip Jerga and I am an experienced software engineer and freelance developer. I have a Master's degree in Artificial Intelligence and several years of experience working on a wide range of technologies and projects from C++ development for ultrasound devices to modern mobile and web applications in React and Angular. Throughout my career, I have acquired advanced technical knowledge and the ability to explain programming topics clearly and in detail to a broad audience. I invite you to take my course, where I have put a lot of effort to explain web and software engineering concepts in a detailed, hands-on and understandable way." />
-        <meta name="keywords" content="jerga portfolio, jerga developer, jerga freelancig, jerga programming"/>
-        <meta property="og:title" content="Filip Jerga - programmer, developer, bloger" />
+        <meta name="description" content="Atualmente estou estudando Ciência de Dados e minha história com o mundo da programação começou quando
+                eu tinha 13 anos de idade, desde então, estudo todos os dias para me manter atualizado em sites como: Udemy,
+                Youtube, Medium e vários outros! Em 2017, comecei meu estágio e tive a portunidade de colocar tudo que eu vinha aprendendo
+                em cases reais, e apesar de gostar muito de Java, fui me especializando em Javascript tanto no Backend, quanto no Frontend" />
+        <meta name="keywords" content="travagin portfolio, travagin developer, lucas travagin freelancig, lucas travagin programming"/>
+        <meta property="og:title" content="Lucas Travagin - programmer, developer, bloger" />
         <meta property="og:locale" content="en_EU" />
         <meta property="og:url" content={`${process.env.BASE_URL}`}/>
         <meta property="og:type" content="website"/>
-        <meta property="og:description" content="My name is Filip Jerga and I am an experienced software engineer and freelance developer."/>
+        <meta property="og:description" content="Meu nome é Lucas Travagin e sou um Programador que gosta muito de Web, Mobile e Devops."/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
         {cannonical && <link rel="cannonical" href={`${process.env.BASE_URL}${cannonical}`}/>}
-        <link rel="icon" type="image/ico" href="/static/favicon.ico"/>
+        <link rel="icon" type="image/ico" href="/static/favicon.png"/>
       </Head>
       <div className="layout-container" >
         <Header className={`port-nav-${headerType}`}

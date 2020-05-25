@@ -8,29 +8,29 @@ class About extends React.Component {
 
   render() {
     return (
-      <BaseLayout title="Filip Jerga - Learn More About Me" {...this.props.auth}>
+      <BaseLayout title="Lucas Travagin - Learn More About Me" {...this.props.auth}>
         <BasePage className="about-page">
           <Row className="mt-5">
             <Col md="6">
               <div className="left-side">
-                <h1 className="title fadein">Hello, Welcome</h1>
-                <h4 className="subtitle fadein">To About Page</h4>
-                <p className="subsubTitle fadein">Feel free to read short description about me.</p>
+                <h1 className="title fadein">Olá, Seja bem Vindo</h1>
+                <h4 className="subtitle fadein">Aqui em Breve terá uma foto</h4>
+                <p className="subsubTitle fadein">Mas por em quanto, leia uma breve descrição sobre mim</p>
               </div>
             </Col>
             <Col md="6">
               <div className="fadein">
-                <p>My name is Filip Jerga and I am an experienced software engineer and freelance developer. </p>
-                <p>
-                I have a Master's degree in Artificial Intelligence and several years of experience working
-                on a wide range of technologies and projects from C++ development for ultrasound devices to
-                 modern mobile and web applications in React and Angular.
+                <p>Meu nome é Lucas Travagin e sou um Programador que gosta muito de Web, Mobile e Devops. </p>
+                <p className="text-justify">
+                Atualmente estou estudando Ciência de Dados e minha história com o mundo da programação começou quando
+                eu tinha 13 anos de idade, desde então, estudo todos os dias para me manter atualizado em sites como: Udemy,
+                Youtube, Medium e vários outros! Em 2017, comecei meu estágio e tive a portunidade de colocar tudo que eu vinha aprendendo
+                em cases reais, e apesar de gostar muito de Java, fui me especializando em Javascript tanto no Backend, quanto no Frontend.
                 </p>
-                <p>
-                Throughout my career, I have acquired advanced technical knowledge and the ability to explain
-                programming topics clearly and in detail to a broad audience. I invite you to take my course,
-                where I have put a lot of effort to explain web and software engineering concepts in a detailed,
-                hands-on and understandable way.
+                <p className="text-justify">
+                Vivo em um aprendizado constante e ultimamente assuntos sobre inteligência emocional, tem prendido a minha atenção.
+                Descobri que a empatia pode te livrar de um infarto e te faz ter momento mais felizes, a vida é melhor compreendida
+                quando você entender que o outro é o outro. Amo meus pais, meus irmãos e minha cadela Lupita.   
                 </p>
               </div>
             </Col>

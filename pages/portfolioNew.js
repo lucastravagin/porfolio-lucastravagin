@@ -17,7 +17,8 @@ const INITIAL_VALUES = { title: '',
                          position: '',
                          description: '',
                          startDate: moment(),
-                         endDate: moment() };
+                         endDate: moment() 
+                      };
 
 class PortfolioNew extends React.Component {
 
@@ -52,7 +53,7 @@ class PortfolioNew extends React.Component {
 
     return (
       <BaseLayout {...this.props.auth}>
-        <BasePage className="portfolio-create-page" title="Create New Portfolio">
+        <BasePage className="portfolio-create-page" title="Criar Portfólio">
           <Row>
             <Col md="6">
               <PortfolioCreateForm initialValues={INITIAL_VALUES}

@@ -25,27 +25,22 @@ const validateInputs = (values) => {
   return errors;
 }
 
-const INITIAL_VALUES = {
-  title: '',
-  company: '',
-  location: '',
-  position: '',
-  description: '',
-  startDate: '',
-  endDate: ''
-};
+// const INITIAL_VALUES = {
+//   title: '',
+//   company: '',
+//   location: '',
+//   position: '',
+//   description: '',
+//   startDate: '',
+//   endDate: ''
+// };
 
 const PortfolioCreateForm = ({initialValues, onSubmit, error}) => (
   <div>
     <Formik
-      initialValues={INITIAL_VALUES}
+      initialValues={initialValues}
       validate={validateInputs}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
+      onSubmit={onSubmit}
     >
       {({ isSubmitting }) => (
         <Form>
@@ -76,9 +71,9 @@ const PortfolioCreateForm = ({initialValues, onSubmit, error}) => (
           />
           <Field label="Start Date" name="startDate" component={PortDate} />
           <Field label="End Date" name="endDate" component={PortDate} />
-          <button type="submit" disabled={isSubmitting}>
+          <Button color="success" size="lg" type="submit" disabled={isSubmitting}>
             Create
-          </button>
+          </Button>
         </Form>
       )}
     </Formik>

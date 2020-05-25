@@ -53,7 +53,7 @@ class Blogs extends React.Component {
       <BaseLayout {...this.props.auth}
                   headerType={'landing'}
                   className="blog-listing-page"
-                  title="Filip Jerga - Newest Blogs to Read">
+                  title="Lucas Travagin - Newest Blogs to Read">
         <div className="masthead" style={{"backgroundImage": "url('/static/images/home-bg.jpg')"}}>
           <div className="overlay"></div>
           <Container>
@@ -85,7 +85,7 @@ class Blogs extends React.Component {
                 <div className="col-lg-8 col-md-10 mx-auto">
                   <ul className="list-inline text-center">
                     <li className="list-inline-item">
-                      <a target="_blank" href="https://www.facebook.com/groups/217273012433804/?jazoest=26510012195869511271971084598756511378108122691091131211141201017010910474116557610010645897511574116115668565119119586510012177701165586491061151219048557183120488290847377451207611983109114112118697610912011183109109521091159581">
+                      <a target="_blank" href="https://www.facebook.com/lucastravagi">
                         <span className="fa-stack fa-lg">
                           <i className="fas fa-circle fa-stack-2x"></i>
                           <i className="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -93,15 +93,23 @@ class Blogs extends React.Component {
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a target="_blank" href="https://github.com/Jerga99">
+                      <a target="_blank" href="https://github.com/lucastravagin">
                         <span className="fa-stack fa-lg">
                           <i className="fas fa-circle fa-stack-2x"></i>
                           <i className="fab fa-github fa-stack-1x fa-inverse"></i>
                         </span>
                       </a>
                     </li>
+                    <li className="list-inline-item">
+                      <a target="_blank" href="https://instagram.com/lucastravagin">
+                        <span className="fa-stack fa-lg">
+                          <i className="fas fa-circle fa-stack-2x"></i>
+                          <i className="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
                   </ul>
-                  <p className="copyright text-muted">Copyright &copy; Filip Jerga 2018</p>
+                  <p className="copyright text-muted">Copyright &copy; Lucas Travagin 2050</p>
                 </div>
               </Row>
             </Container>

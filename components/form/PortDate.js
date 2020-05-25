@@ -24,8 +24,9 @@ export default class PortDate extends React.Component {
       dateValue: date
     });
 
-    setFieldValue(name, date, true);
     setFieldTouched(name, true, true);
+    setFieldValue(name, date, true);
+    
   };
 
   render() {
@@ -41,7 +42,7 @@ export default class PortDate extends React.Component {
         <div className="input-group">
           <DatePicker
             selected={moment(this.state.dateValue)}
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this)}
             peekNextMounth
             showMonthDropdown
             showYearDropdown
